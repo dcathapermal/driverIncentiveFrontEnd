@@ -1,0 +1,13 @@
+footer {
+  display: block;
+  box-sizing: border-box;
+  border-top: groove;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  float: left;
+  background-color: rgb(46, 139, 87);
+}

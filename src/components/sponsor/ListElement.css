@@ -1,0 +1,15 @@
+.ListElement {
+    border-top: 1px solid #1A1A1A;
+    border-bottom: 1px solid #1A1A1A;
+}
+
+.ListElementActive {
+    padding: 10px;
+    background-color: #EDEDED;
+    cursor: pointer;
+}
+
+.ListElementInactive {
+    padding: 10px;
+    background-color: #FFFFFF;
+}

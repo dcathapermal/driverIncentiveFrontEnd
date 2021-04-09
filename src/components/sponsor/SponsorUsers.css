@@ -1,0 +1,34 @@
+.SponsorUsers {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.SponsorUsers_Sidebar {
+    padding: 20px;
+    background-color: #CCCCCC;
+    overflow: auto;
+}
+
+.SponsorUsers_Content {
+    padding: 20px;
+    background-color: #F2F2F2;
+    overflow: auto;
+}
+
+.addSponsorBtn {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #8EC63F;
+    cursor: pointer;
+}
+
+.addSponsorBtn:hover {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: #7EB038;
+    cursor: pointer;
+}

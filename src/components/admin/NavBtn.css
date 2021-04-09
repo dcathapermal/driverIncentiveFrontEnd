@@ -1,0 +1,27 @@
+.NavBtn {
+    border: 1px solid #1A1A1A;
+    cursor: pointer;
+}
+
+.NavBtnContent {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.NavBtnBarActive {
+    height: 10%;
+    background-color: #8EC63F;
+}
+
+.NavBtnBarInactive {
+    height: 10%;
+    background-color: #FFFFFF;
+}
+
+.NavBtnBarHover {
+    height: 10%;
+    background-color: #CCCCCC;
+}

@@ -1,0 +1,32 @@
+// Import React.js
+import React, { useState } from 'react';
+
+// Import CSS
+import './ListElement.css';
+
+/** 
+ *  Single item in list
+**/ 
+const ListElement = ( props ) => {
+    const [ style, setStyle ] = useState ( 'ListElementInactive' );
+    
+    const mouseOver = () => {
+        setStyle ( 'ListElementActive' );
+    }
+    
+    const mouseOut = () => {
+        setStyle ( 'ListElementInactive' );
+    }
+    
+    const mouseClick = () => {
+        props.onClick ();
+    }
+    
+    return (
+        <div class='ListElement' onMouseOver={ mouseOver } onMouseOut={ mouseOut } onClick={ mouseClick }>
+            <div class={ style }>{ props.text }</div>
+        </div>
+    )
+}
+
+export default ListElement;

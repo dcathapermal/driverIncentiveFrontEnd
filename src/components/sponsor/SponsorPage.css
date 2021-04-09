@@ -1,0 +1,19 @@
+.SponsorPage {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12.5% 6.25% 81.25%;
+}
+
+.SponsorPage_Header {
+    background-color: #8EC63F;
+}
+
+.SponsorPage_NavBar {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.SponsorPage_Content {
+    
+}

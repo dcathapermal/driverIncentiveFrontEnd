@@ -1,0 +1,15 @@
+.DriverApplicantOptions {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.applicatBtn {
+    margin: 20px;
+    height: 50px;
+}
+
+.applicantMessage {
+    grid-column: 1 / 3;
+    padding: 50px;
+    text-align: center;
+}

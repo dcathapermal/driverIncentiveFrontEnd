@@ -1,0 +1,22 @@
+.SidebarBtn {
+    cursor: pointer;
+}
+
+.SidebarBtnActive {
+    padding: 10px;
+    font-weight: bold;
+    color: #1A1A1A;
+    background-color: #B3B3B3;
+}
+
+.SidebarBtnInactive {
+    padding: 10px;
+    color: #808080;
+}
+
+.SidebarBtnHover {
+    padding: 10px;
+    font-weight: bold;
+    color: #4D4D4D;
+    background-color: #C7C7C7;
+}

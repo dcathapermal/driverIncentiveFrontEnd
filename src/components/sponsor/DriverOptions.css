@@ -1,0 +1,34 @@
+.pointChanger {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.points {
+    font-size: 50px;
+    text-align: center;
+}
+
+.subtractPointsBtn {
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addPointsBtn {
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reasonTextArea {
+    width: 100%;
+    height: 100px;
+    resize: vertical;
+}
+
+.confirmBtn {
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: right;
+}
