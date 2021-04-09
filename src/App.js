@@ -14,6 +14,8 @@ import Profile from "./components/profile";
 import PurchaseTable from "./components/Purchase.js";
 import {Catalog} from "./components/Catalog";
 import { Nav } from "react-bootstrap";
+import SponsorHome from "./components/sponsor/SponsorHome";
+import AdminHome from "./components/admin/AdminHome";
 
 const djangoService = new DjangoService () ;
 const LoginContainer = () => {
@@ -29,16 +31,18 @@ const LoginContainer = () => {
 const DefaultContainer = () => (
   <div>
     <Navbar />
-    <Route path="/home" exact component={() => <PointHistory />} />
-    <Route path="/catalog" exact component={() => <Catalog />} />
-    <Route path="/orders" exact component={() => <PurchaseTable />} />
+    <Route path="/driver/home" exact component={() => <PointHistory />} />
+    <Route path="/driver/catalog" exact component={() => <Catalog />} />
+    <Route path="/driver/orders" exact component={() => <PurchaseTable />} />
+    <Route path="/sponsor" exact component={() => <SponsorHome/>}/>
+    <Route path="/admin" exact component={() => <AdminHome/> } />
     <Footer />
   </div>
 );
 const ProfileContainer = () => (
   <div>
     <Navbar />
-    <Route path="/settings" exact component={() => <Profile />} />
+    <Route path="/driver/settings" exact component={() => <Profile />} />
    
   </div>
 );
@@ -52,8 +56,9 @@ class App extends Component {
           <Route path="/" exact component={LoginContainer} />
             <Route path="/login" exact component={LoginContainer} />
             <Route path="/registration" exact component={LoginContainer} />
-            <Route path="/settings" exact component={ProfileContainer} />
+            <Route path="/driver/settings" exact component={ProfileContainer} />
             <Route component={DefaultContainer} />
+
           </Switch>
         </Router>
       </div>

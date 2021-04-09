@@ -1,6 +1,6 @@
 const axios = require("axios");
 
-const API_URL = "http://ec2-34-207-127-34.compute-1.amazonaws.com/" //subject to change
+const API_URL = "https://ec2-34-207-127-34.compute-1.amazonaws.com/driver" //subject to change
 
 class DjangoService {
     constructor(){

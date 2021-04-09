@@ -7,6 +7,7 @@ import { useHistory } from "react-router-dom";
 export default function Login(props) {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [usertype, setUser] = useState("");
   const history = useHistory();
   function handleNew() {
     history.push("/registration");
@@ -16,7 +17,9 @@ export default function Login(props) {
     event.preventDefault();
     props.djangoService.login(username, password).then((user_type) => {
       console.log(user_type['data']['user_type']);
-      history.push("/"+  user_type['data']['user_type']);
+      setUser(user_type['data']['user_type']);
+      console.log(usertype);
+      history.push("/"+  user_type['data']['user_type']+"/home");
     })
   }
   function handlePassword(event) {

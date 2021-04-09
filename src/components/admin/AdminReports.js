@@ -3,6 +3,10 @@ import React, { useState } from 'react';
 
 // Import components
 import SidebarBtn from './SidebarBtn.js';
+import ReportSalesBySponsor from './ReportSalesBySponsor.js';
+import ReportSalesByDriver from './ReportSalesByDriver.js';
+import ReportInvoices from './ReportInvoices.js';
+import ReportAuditLog from './ReportAuditLog.js';
 
 // Import CSS
 import './AdminReports.css';
@@ -55,7 +59,10 @@ const AdminReports = () => {
                     onClick={ () => changeTab ( tabs.AUDIT_LOGS ) } />
             </div>
             <div class='AdminReports_Content'>
-                
+                { ( activeTab == tabs.SALES_BY_SPONSOR ) && <ReportSalesBySponsor /> }
+                { ( activeTab == tabs.SALES_BY_DRIVER ) && <ReportSalesByDriver /> }
+                { ( activeTab == tabs.INVOICES ) && <ReportInvoices /> }
+                { ( activeTab == tabs.AUDIT_LOGS ) && <ReportAuditLog /> }
             </div>
         </div>
     )
