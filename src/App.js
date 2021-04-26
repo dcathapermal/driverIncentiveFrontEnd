@@ -29,7 +29,7 @@ const LoginContainer = () => {
   );
 }
 const DefaultContainer = () => (
-  <div>
+  <div> 
     <Navbar />
     <Route path="/driver/home" exact component={() => <PointHistory />} />
     <Route path="/driver/catalog" exact component={() => <Catalog />} />
